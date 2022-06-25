@@ -1,0 +1,422 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    --main-purple: #560BAD;
+    --purple-20: #FCF4FF;
+    --yellow60 : #FDF0CC;
+    --blue : #F6FAFD;
+}
+
+
+/* Mobile View */
+@media screen and (min-width : 320px) {
+    nav {
+        margin-top: 1.5rem;
+        display: flex;
+        padding: 0 1rem;
+        width: 90%;
+    }
+
+    .creditHub{
+        display: flex;
+        align-items: center;
+    }
+
+    .logoText {
+        margin-left: 5px;
+    }
+
+    .hamburger {
+        margin-top: .2rem;
+        margin-left: auto;
+    }
+
+    .purple{
+        color: var(--main-purple);
+    }
+
+    .grow {
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .grow h1{
+        font-weight: 500;
+        font-size: 1.7rem;
+    }
+
+    .grow p{
+        margin-top: 1rem;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .getStarted{
+        width: 14.9rem;
+        height: 62px;
+        background-color: var(--main-purple);
+        color: white;
+        margin: auto;
+        padding: 16px 32px;
+        border: none;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 5px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .works{
+        width: 15rem;
+        height: 62px;
+        margin: auto;
+        padding: 16px 32px;
+        border: 1px solid var(--main-purple);
+        font-weight: 600;
+        border-radius: 5px;
+        color: var(--main-purple);
+        background-color: white;
+        display: flex;
+        align-items: center;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .works img{
+        margin-right: 5px;
+        margin-left: 15px;
+    }
+
+    .stats{
+        margin-top: 3.5rem;
+    }
+
+    .suitMan {
+        z-index: -1;
+    }
+
+    .growthChart{
+        margin-left: 11rem;
+        margin-top: -1rem;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .signUpAlert{
+        background-color: var(--yellow60);
+        border-radius: 5px;
+        width: 12rem;
+        display: flex;
+        align-items: center;
+        padding: 5px 11px 10px 8px;
+        margin-top: -5rem;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .signUpAlert img{
+        height: 19px;
+    }
+
+    .signUpAlert p {
+        font-size: 9.59px;
+        font-weight: 400;
+        line-height: 14.92px;
+        width: 101.3px;
+        margin-left: 1rem;
+        margin-top: 1px;
+        text-align: left;
+    }
+    
+    .partners{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 1rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .whyCredithub {
+        text-align: center;
+        margin: 4rem auto;
+    }
+
+    .whyCredithub p {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 3rem;
+    }
+
+    .perks {
+        width: 90%;
+        margin: auto;
+        border-radius: 8px;
+        padding: 2rem 0;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        color: #251C29;
+    }
+
+    .perks h3 {
+        width: 11rem;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .perks h5{
+        width: 14rem;
+        font-weight: 400;
+        font-size: 14px;
+        margin: auto;
+        margin-top: 1rem;
+        line-height: 21px;
+    }
+
+    .callToAction {
+        background-color: var(--blue);
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .callToAction img {
+        width: 90%;
+    }
+
+    .revenue {
+        display: flex;
+        padding: 0;
+        padding: 1rem 0;
+        background-color: var(--yellow60);
+        width: 90%;
+        margin: auto;
+        margin-top: .3rem;
+    }
+
+    .revenue div {
+        width: 33.3%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .revenue h3 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .revenue p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 98px;
+        margin-top: .5rem;
+    }
+
+    .callToAction h2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33.6px;
+        text-align: left;
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    .callToAction h5{
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .gettingStarted {
+        padding: 1rem;
+    }
+
+    .gettingStarted h2 {
+        width: 16.4rem;
+        margin: 1rem 0;
+    }
+
+    .gettingStarted img{
+        margin: 1rem auto;
+        width: 100%;
+    }
+
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .steps{
+        padding: 21px 32px 21px 10px;
+        border-radius: 4px;
+        background-color: var(--blue);
+    }
+
+    .count{
+        font-size: 12px;
+        font-weight: 400;
+        color: #757575;
+        margin-bottom: 1rem;
+    }
+
+    .instruction {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #251C29;
+        margin-bottom: 1rem;
+    }
+
+    .tips {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    #theButton{
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .testimonies{
+        padding: 1rem;
+        text-align: center;
+        background-color: var(--purple-20);
+    }
+
+    .testimonies h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+        width: 14.25rem;
+        margin: auto;
+    }
+
+    .testimonies h5 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        width: 14.25rem;
+        margin: auto;
+    }
+
+    .card {
+        width: 20.8rem;
+        margin: 5rem auto;
+        background: #FFFFFF;
+        border-radius: 10px;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .card img {
+        border-radius: 50%;
+        margin-top: -3rem;
+    }
+
+    .comment {
+        width: 17.3rem;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .name{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+
+    .location{
+        font-weight: 400;
+        font-size: 12px;
+        margin: .2rem 0 ;
+    }
+
+    .leftRight{
+        height: 3rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .arrowLeft ,.arrowRight{
+        width: 40px;
+    }
+
+    .FAQs{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .FAQs h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 1rem;
+    }
+
+    .FAQs h5 {
+        font-size: 14px;
+        font-weight: 400;
+        width: 17.8rem;
+        margin: 2rem auto;
+    }
+
+    footer {
+        padding: 3rem 1rem;
+        background-color: #FAFAFA;
+    }
+
+    footer li {
+        margin: 2rem 0;
+        list-style: none;
+    }
+
+    footer li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 1.7rem;
+    }
+
+    footer h5 {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+}
