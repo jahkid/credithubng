@@ -1,0 +1,464 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+:root{
+    --main-purple:#560BAD;
+}
+
+@media screen and (min-width: 320px) {
+    .navBar {
+        margin-top: 2rem;
+        margin-left: 12px;
+    }
+    .title {
+       padding-bottom: 6px;
+    }
+    .menuBar{
+        margin-top: -2rem;
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+    }
+    .earnMoney{
+        margin-top: 2.8rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: -0.02em;
+        color:#212121
+    }
+    .earn{
+        color: var(--main-purple)
+    }
+    .partnerWith{
+        margin: 1rem auto;
+        color: #424242;
+        font-weight: 400;
+        width:70%;
+        left: 52px;
+        height: 89px;
+        line-height: 157%;
+        font-size: 14px;
+        text-align: center;
+    }
+    .twoButtons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .becomeBtn{
+        display: flex;
+        flex-direction: row;
+        background-color:var(--main-purple) ;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        padding: 16px 50px;
+        margin-top: 1rem;
+        font-weight: 600;
+        gap:10px;
+        line-height: 188%;
+    }
+    .seehowBtn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color:var(--main-purple) ;
+        font-weight: 600;
+        font-size: 16px;
+        border: 1px solid var(--main-purple);
+        background-color: #FFFFFF;
+        padding: 14px 30px;
+        border-radius: 4px;
+        line-height: 188%;
+    }
+    .boxImage{
+        margin-top:5rem;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4rem;
+        position: relative;
+        display: inline-block;
+    }
+    .chart{
+        margin-top: -17rem;
+        padding-bottom: 12rem;
+        margin-left: 12rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .monthlyEarn{
+        background-color:#7E3CC9; ;
+        border-radius: 13.72px;
+        padding: 9.7px 0px 18.24px 7.76px;
+        gap: 10.09px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:58%;
+        color: #FFFFFF;;
+        font-weight: 400;
+        font-size: 9.59px;
+        line-height: 15px;
+        position: absolute;
+        z-index: 999;
+        top: 60.3%;
+        left: -13%;
+    }
+    .monthlyEarn b{
+        margin-right: 1rem;
+    }
+    .logoBox{
+        margin: auto;
+        margin-top: 2.7rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .whyAffiliates{
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        line-height: 150%;
+        color: #000000;
+        margin-top: 5rem;
+        width: 60%;
+        left: 20%;
+    }
+    .whyAffiliatesPerks{
+        border-radius: 8px;
+        padding: 15px 20px 20px;
+        margin: auto;
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    .manOnMoneyImage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        background-color: white;
+    }
+    .manOnMoneyBold {
+        font-weight: 700;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 138%;
+        padding-bottom: 00.5rem;
+    }
+    .manOnMoneyNote{
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 150%;
+    }
+    .howItWorksDiv{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        line-height: 150%;
+    }
+    .howItWorks{
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 2.5rem;
+    }
+    .signUp{
+        font-weight: 700;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+    .freeAndEasy{
+        font-size: 14px;
+        font-weight: 400;
+        top:2290px;
+        margin-top: 1rem;
+        width: 68%;
+    }
+    #becomeAffiliateBtn{
+        margin-top: 3rem;
+    }
+    .manOnTieDiv{
+        background-color: #F6FAFD;
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .achievements{
+        text-align: center;
+        background-color:#FDF0CC ;
+        color: #251C29;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5rem;
+        width:87%;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .achievements span{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 110%;
+        font-weight: bold;
+    }
+    .achievements p{
+        margin-top: 0.5rem;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: center;
+    }
+    .numberOfAffiliates{
+        width:80%;
+    }
+    .disruptingNigeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .disruptingNigeria p{
+        font-weight: 600;
+        font-size: 24px;
+        width: 90%;
+        margin-top: 1rem;
+        line-height: 150%;
+        margin-left: 0.8rem;
+    }
+    .disruptingNigeria span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin-top: 1rem;
+        width: 83.9%;
+        color: #424242;
+    }
+    .whatPeopleSay{
+        margin-top: 2.8rem;
+        background-color: #FCF4FF;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatPeopleSay p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        width: 50%;
+        text-align: center;
+        color:  #222222;
+    }
+    .whatPeopleSay span {
+        color:var(--main-purple) ;
+    }
+    .ourClients{
+        margin-top: 1.2rem;
+        line-height:150%;
+        font-weight: 400;
+        font-size: 14px;
+        color: #666666;
+        text-align: center;
+        width: 65%;
+    }
+    .clients{
+        display: inline-block;
+        position: relative;
+        margin-top: 2rem;
+    }
+    .client1{
+        background-color: #FFFFFF;
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left:5%;
+        width: 90%;
+        top:80px ;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        z-index: 999;
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    }
+    .smilingManImg { 
+       position: relative;
+       top:20px;
+       z-index: 999;
+       left:40%;
+    }
+    .credithubIsMyPreferred {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #444444;
+        width:72%;
+        text-align: center;
+    }
+    .musaAhmed{
+        margin-top: 1rem;
+        font-weight: 600;
+        line-height:150%;
+        color: #222222;
+    }
+    .abujaNigeria{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #666666;
+        margin-top: 0.5rem;
+    }
+    .client2{
+        position: relative;
+        margin-top: 6.2rem;
+        left: 10%;
+        border: 1.5px solid rgba(102, 102, 102, 0.08);
+        filter: drop-shadow(0px 10px 30px rgba(34, 34, 34, 0.35));
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: #66666614;
+        background-color:#FCF4FF ;
+        border-radius: 10px;
+        padding: 20px 15px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .emileAdefioye{
+        color: #222222;
+        opacity: 0.5;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 1rem;
+    }
+    .lagosNigeria{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #666666;
+        opacity: 0.5;
+    }
+    .arrows{
+        margin-top: 5rem;
+    }
+    .arrows img{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .faqs{
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .faqs span{
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        margin-bottom: 1rem;
+    }
+    .faqs p{
+        width:66%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin-top: 1rem;
+    }
+    .allQuestions{
+        width:90%;
+        align-items: flex-end;
+    }
+    .questions{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin-top: 2rem;
+    }
+    .questions button{
+        width: 100%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        border: none;
+        outline: none;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        text-align: left;
+        background-color: white;
+        padding: 1rem;
+    }
+    .questions img{
+        margin-left: auto;
+    }
+    .active, .questions:hover{
+        background-color: #ccc;
+    }
+    .panel{
+        padding: .5rem 1rem;
+        display: none;
+        overflow: hidden;
+        text-align: left;
+        font-size: 12px;
+    }
+    .footer{
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        background-color: #FAFAFA;
+    }
+    .textandLogo{
+        margin-left: 2rem;
+    }
+    .footer ul{
+        margin-left: 2rem;
+        list-style-type: none;
+    }
+    .footer li{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin-top: 1.5rem;
+    }
+    .footerIcons {
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+    .footerIcons img{
+        margin-left: 1rem;
+    }
+    .copyright{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        margin-top:1rem ;
+        margin-left: 2rem;
+    }
+}
