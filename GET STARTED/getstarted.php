@@ -1,3 +1,17 @@
+<?php
+require ('functions.php');
+$errors = array();
+//on submit run this code to check for errors in the form
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+  $errors = signup($_POST);
+
+  if (count($errors)==0) {
+    // header('Locations: ./SIGN-IN/signin.php');
+    // die;
+  }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -58,17 +72,26 @@
           <h1>Get your company started on CreditHub</h1>
         </div>
         <!-- this section entails the input  -->
+        <div>
+          <!-- display the errors here -->
+          <?php if(count($errors)>0):?>
+            <?php foreach ($errors as $error ): ?>
+              <?= $error ?> <br>
+            <?php endforeach;?>
+          <?php endif;?>
+        </div>
+        <form action="getstarted.php" method="post">
         <div class="input">
-          <label for="text">Full Name </label>
-          <input type="text" placeholder="Enter your name" required />
-          <label for="text">Company Name </label>
-          <input type="text" placeholder="Enter your company's name" required />
-          <label for="text">Email Address </label>
-          <input type="email" placeholder="youremail@email.com" required />
-          <label for="text">Phone Number</label>
-          <input type="number" placeholder="e.g 08012345678" required />
-          <label for="text">Location</label>
-          <input type="text" />
+          <label for="full-name">Full Name </label>
+          <input type="text" placeholder="Enter your name" name = 'full-name'required />
+          <label for="company">Company Name </label>
+          <input type="text" placeholder="Enter your company's name" name="company" required />
+          <label for="email">Email Address </label>
+          <input type="email" placeholder="youremail@email.com" name="email" required />
+          <label for="phone-number">Phone Number</label>
+          <input type="number" placeholder="e.g 08012345678" name="phone-number" required />
+          <label for="location">Location</label>
+          <input type="text" name="location" />
           <label for="text">Product or Service Name</label>
           <input type="text" required />
           <label for="text"
@@ -94,6 +117,7 @@
               </div>
           </div>
           <button class="btn">Sign Up</button>
+          </form>
         </div>
       </div>
     </div>
