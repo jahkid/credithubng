@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Work Sans', sans-serif;
 }
 
 :root {
     --main-purple: #560BAD;
     --purple-20: #FCF4FF;
-    --yellow60 : #FDF0CC;
-    --blue : #F6FAFD;
+    --yellow60: #FDF0CC;
+    --blue: #F6FAFD;
 }
 
 
@@ -21,10 +21,10 @@ body{
         margin-top: 1.5rem;
         display: flex;
         padding: 0 1rem;
-        width: 90%;
+        /* width: 90%; */
     }
 
-    .creditHub{
+    .creditHub {
         display: flex;
         align-items: center;
     }
@@ -38,7 +38,7 @@ body{
         margin-left: auto;
     }
 
-    .purple{
+    .purple {
         color: var(--main-purple);
     }
 
@@ -50,13 +50,13 @@ body{
         display: flex;
         flex-direction: column;
     }
-    
-    .grow h1{
+
+    .grow h1 {
         font-weight: 500;
         font-size: 1.7rem;
     }
 
-    .grow p{
+    .grow p {
         margin-top: 1rem;
         font-size: 14px;
         line-height: 22px;
@@ -70,7 +70,7 @@ body{
         margin-top: 1.5rem;
     }
 
-    .getStarted{
+    .getStarted {
         width: 14.9rem;
         height: 62px;
         background-color: var(--main-purple);
@@ -82,9 +82,14 @@ body{
         font-weight: 600;
         border-radius: 5px;
         font-family: 'Work Sans', sans-serif;
+        cursor: pointer;
     }
 
-    .works{
+    .aWorks {
+        text-decoration: none;
+    }
+
+    .works {
         width: 15rem;
         height: 62px;
         margin: auto;
@@ -97,14 +102,15 @@ body{
         display: flex;
         align-items: center;
         font-family: 'Work Sans', sans-serif;
+        cursor: pointer;
     }
 
-    .works img{
+    .works img {
         margin-right: 5px;
         margin-left: 15px;
     }
 
-    .stats{
+    .stats {
         margin-top: 3.5rem;
     }
 
@@ -112,14 +118,14 @@ body{
         z-index: -1;
     }
 
-    .growthChart{
+    .growthChart {
         margin-left: 11rem;
         margin-top: -1rem;
         z-index: 1;
         position: absolute;
     }
 
-    .signUpAlert{
+    .signUpAlert {
         background-color: var(--yellow60);
         border-radius: 5px;
         width: 12rem;
@@ -131,7 +137,7 @@ body{
         position: absolute;
     }
 
-    .signUpAlert img{
+    .signUpAlert img {
         height: 19px;
     }
 
@@ -144,8 +150,8 @@ body{
         margin-top: 1px;
         text-align: left;
     }
-    
-    .partners{
+
+    .partners {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -184,7 +190,7 @@ body{
         margin-top: 1rem;
     }
 
-    .perks h5{
+    .perks h5 {
         width: 14rem;
         font-weight: 400;
         font-size: 14px;
@@ -235,7 +241,7 @@ body{
         margin-top: .5rem;
     }
 
-    .callToAction h2 {
+    .our-aim h2 {
         font-size: 24px;
         font-weight: 600;
         line-height: 33.6px;
@@ -244,7 +250,7 @@ body{
         width: 90%;
     }
 
-    .callToAction h5{
+    .our-aim h5 {
         text-align: left;
         font-weight: 400;
         font-size: 14px;
@@ -263,7 +269,7 @@ body{
         margin: 1rem 0;
     }
 
-    .gettingStarted img{
+    .gettingStarted img {
         margin: 1rem auto;
         width: 100%;
     }
@@ -274,13 +280,13 @@ body{
         gap: 1rem;
     }
 
-    .steps{
+    .steps {
         padding: 21px 32px 21px 10px;
         border-radius: 4px;
         background-color: var(--blue);
     }
 
-    .count{
+    .count {
         font-size: 12px;
         font-weight: 400;
         color: #757575;
@@ -301,12 +307,12 @@ body{
         line-height: 21px;
     }
 
-    #theButton{
+    #theButton {
         text-align: center;
         margin: 2rem;
     }
 
-    .testimonies{
+    .testimonies {
         padding: 1rem;
         text-align: center;
         background-color: var(--purple-20);
@@ -351,19 +357,19 @@ body{
         margin-top: 1rem;
     }
 
-    .name{
+    .name {
         font-size: 1rem;
         font-weight: 600;
         margin-top: 1rem;
     }
 
-    .location{
+    .location {
         font-weight: 400;
         font-size: 12px;
-        margin: .2rem 0 ;
+        margin: .2rem 0;
     }
 
-    .leftRight{
+    .leftRight {
         height: 3rem;
         display: flex;
         gap: 2rem;
@@ -371,11 +377,12 @@ body{
         margin-bottom: 16px;
     }
 
-    .arrowLeft ,.arrowRight{
+    .arrowLeft,
+    .arrowRight {
         width: 40px;
     }
 
-    .FAQs{
+    .FAQs {
         text-align: center;
         padding: 1rem;
     }
@@ -393,6 +400,39 @@ body{
         margin: 2rem auto;
     }
 
+    .accordion {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        width: 100%;
+        cursor: pointer;
+        padding: 1rem;
+        background-color: white;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        display: flex;
+        align-items: center;
+    }
+
+    .accordion img {
+        margin-left: auto;
+    }
+
+    .panel {
+        padding: .5rem 1rem;
+        overflow: hidden;
+        display: none;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
     footer {
         padding: 3rem 1rem;
         background-color: #FAFAFA;
@@ -403,7 +443,7 @@ body{
         list-style: none;
     }
 
-    footer li a{
+    footer li a {
         text-decoration: none;
         color: black;
     }
@@ -419,4 +459,376 @@ body{
         font-weight: 400;
         margin-top: 1rem;
     }
+
+    .mid-nav {
+        display: none;
+    }
+
+    .end-nav {
+        display: none;
+    }
+
+    .web-nav-buttons {
+        display: none;
+    }
+
+    .more-questions {
+        display: none;
+    }
+
+    .for-free {
+        display: none;
+    }
+}
+
+/*Desktop View*/
+@media screen and (min-width : 1024px) {
+    nav {
+        margin: 0;
+        padding: 0.5rem 3rem;
+        align-items: center;
+        background-color: #FAFAFA;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    nav a:hover {
+        color: var(--main-purple);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mid-nav {
+        display: block;
+        margin-left: 3rem;
+    }
+
+    .end-nav {
+        margin-left: auto;
+        display: flex;
+        gap: 1.5rem;
+        margin-right: 3rem;
+    }
+
+    .nav-getStarted {
+        padding: 10px 32px;
+        background-color: var(--main-purple);
+        border: none;
+        color: white;
+        border-radius: 4px;
+        font-family: 'Work Sans', sans-serif;
+        cursor: pointer;
+    }
+
+    .nav-logIn {
+        padding: 10px 32px;
+        font-family: 'Work Sans', sans-serif;
+        border: 1px solid var(--main-purple);
+        color: var(--main-purple);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .web-nav-buttons {
+        display: block;
+    }
+
+    .grow {
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    .buttons {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    .grow-mobile {
+        text-align: left;
+        width: 50%;
+    }
+
+    .grow-mobile h1 {
+        font-size: 40px;
+        margin-top: 6rem;
+    }
+
+    .grow-mobile span {
+        font-style: italic;
+    }
+
+    .grow-mobile p {
+        width: 460px;
+    }
+
+    .getStarted {
+        width: 11rem;
+        height: 3rem;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .works {
+        width: 11rem;
+        height: 3rem;
+        margin: 0;
+        font-size: 11px;
+        padding: 0;
+        padding: 8px 16px;
+    }
+
+    .works img {
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .stats {
+        width: 50%;
+        text-align: center;
+    }
+
+    .suitMan {
+        width: 70%;
+    }
+
+    .growthChart {
+        margin: 0;
+        margin-left: 20rem;
+        margin-top: -3rem;
+        width: 10rem;
+    }
+
+    .signUpAlert {
+        width: 19rem;
+        height: 4rem;
+        margin-top: -15rem;
+    }
+
+    .signUpAlert img {
+        height: 25px;
+    }
+
+    .signUpAlert p {
+        width: 13rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .partners {
+        width: 70%;
+        margin-bottom: 4rem;
+    }
+
+    .whyCredithub {
+        margin: 0;
+    }
+
+    .whyCredithub p {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .perks {
+        width: 32%;
+    }
+
+    .perks-container {
+        display: flex;
+        padding: 4rem;
+    }
+
+    .perks h3 {
+        width: 13rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .perks h5 {
+        width: 17rem;
+    }
+
+    .callToAction {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5rem 0;
+    }
+
+    .revenue-section {
+        width: 50%;
+    }
+
+    .our-aim {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .our-aim h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .our-aim h5 {
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 17px;
+    }
+
+    .our-aim .getStarted {
+        padding: 8px 16px;
+        position: absolute;
+        left: 2rem;
+        width: 165px;
+        height: 52px;
+    }
+
+    .callToAction img {
+        height: 412px;
+    }
+
+    .gettingStarted {
+        display: flex;
+        padding: 4rem 2rem;
+    }
+
+    .gettingStarted h2 {
+        width: 22rem;
+    }
+
+    .get-started-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .revenue {
+        padding: 2rem 0;
+    }
+
+    .revenue h3 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .laptop-container {
+        width: 50%;
+    }
+
+    .for-free {
+        border: none;
+        border-radius: 4px;
+        display: block;
+        margin-left: 1rem;
+        padding: 12px 20px;
+        color: white;
+        background-color: var(--main-purple);
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .steps-container {
+        width: 50%;
+        margin-left: -2rem;
+        margin-top: 5.5rem;
+    }
+
+    #theButton {
+        display: none;
+    }
+
+    .revenue p {
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .testimonies {
+        display: flex;
+        padding: 5rem;
+    }
+
+    .testimonies-text {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .testimonies h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+        width: 16rem;
+    }
+
+    .testimonies h5 {
+        margin: 0;
+        width: 16rem;
+    }
+
+    .testimonies-card {
+        width: 50%;
+    }
+
+    .FAQs {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .FAQs h2 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .FAQs h5 {
+        width: 620px;
+        font-size: 16px;
+    }
+
+    .accordion-container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .more-questions {
+        font-family: 'Work Sans', sans-serif;
+        padding: 14px 34px;
+        border: none;
+        background: #560BAD;
+        color: white;
+        border-radius: 4px;
+        margin: 4rem auto;
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer ul {
+        height: 18rem;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        line-height: .1rem;
+        margin-top: -1rem;
+    }
+
 }
