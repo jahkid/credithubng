@@ -10,42 +10,52 @@ body{
     --main-purple:#560BAD;
 }
 
+body button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+/* mobile view */
+
 @media screen and (min-width: 320px) {
     .navBar {
-        margin-top: 2rem;
-        margin-left: 12px;
-    }
-    .title {
-       padding-bottom: 6px;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+        display: flex;
     }
     .menuBar{
-        margin-top: -2rem;
-        display: flex;
+        margin-top: .2rem;
         margin-left: auto;
-        justify-content: flex-end;
+    }
+    .earnMonPromoting{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
     .earnMoney{
         margin-top: 2.8rem;
-        text-align: center;
         font-weight: 500;
         font-size: 32px;
         line-height: 35px;
         letter-spacing: -0.02em;
-        color:#212121
+        color:#212121;
+        width: 95%;
     }
     .earn{
-        color: var(--main-purple)
+        color: var(--main-purple);
     }
     .partnerWith{
-        margin: 1rem auto;
+        margin-top: 1rem;
         color: #424242;
         font-weight: 400;
-        width:70%;
+        width:63%;
         left: 52px;
         height: 89px;
         line-height: 157%;
-        font-size: 14px;
-        text-align: center;
+        font-size: 14px;        
     }
     .twoButtons{
         display: flex;
@@ -55,6 +65,7 @@ body{
         gap:10px;
     }
     .becomeBtn{
+        width: 14.9rem;
         display: flex;
         flex-direction: row;
         background-color:var(--main-purple) ;
@@ -68,6 +79,7 @@ body{
         line-height: 188%;
     }
     .seehowBtn{
+        width: 14.9rem;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -82,29 +94,36 @@ body{
         border-radius: 4px;
         line-height: 188%;
     }
+    .earnPlusImage{
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
     .boxImage{
-        margin-top:5rem;
+        margin:5rem auto;
         align-items: center;
         justify-content: center;
-        margin-left: 4rem;
         position: relative;
         display: inline-block;
     }
     .chart{
-        margin-top: -17rem;
-        padding-bottom: 12rem;
-        margin-left: 12rem;
-        display: flex;
-        justify-content: flex-end;
+        margin-top: -3rem;
+        position: absolute;
+        margin-left: 13rem;
+        z-index: 1;
+    }
+    .smilingGirl2{
+        z-index: -1;
+        width:270px;
     }
     .monthlyEarn{
         background-color:#7E3CC9; ;
         border-radius: 13.72px;
-        padding: 9.7px 0px 18.24px 7.76px;
-        gap: 10.09px;
+        padding: 10px 10px 15px 10px;
+        text-align: start;
         display: flex;
         flex-direction: row;
-        align-items: center;
         width:58%;
         color: #FFFFFF;;
         font-weight: 400;
@@ -115,16 +134,18 @@ body{
         top: 60.3%;
         left: -13%;
     }
+    .monthlyEarn span{
+        margin-left: 0.5rem;
+    }
     .monthlyEarn b{
         margin-right: 1rem;
     }
     .logoBox{
         margin: auto;
-        margin-top: 2.7rem;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        padding: 0 1rem;
     }
     .whyAffiliates{
         font-size: 24px;
@@ -155,7 +176,6 @@ body{
     }
     .manOnMoneyBold {
         font-weight: 700;
-        font-weight: bolder;
         font-size: 16px;
         line-height: 138%;
         padding-bottom: 00.5rem;
@@ -169,20 +189,20 @@ body{
         text-align: center;
         justify-content: center;
         align-items: center;
-        display: flex;
+        display: flex;text-align: center;
         flex-direction: column;
         margin-top: 5rem;
         line-height: 150%;
     }
     .howItWorks{
+        margin-top: 5rem;
+        text-align: center;
         font-weight: 500;
         font-size: 24px;
-        margin-bottom: 2.5rem;
     }
     .signUp{
         font-weight: 700;
         font-size: 16px;
-        font-weight: bold;
         margin-top: 2rem;
     }
     .freeAndEasy{
@@ -192,18 +212,40 @@ body{
         margin-top: 1rem;
         width: 68%;
     }
+    .btn{
+        width: 14.9rem;
+        display: flex;
+        background-color:var(--main-purple) ;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        padding: 16px 50px;
+        margin-top: 3rem;
+        font-weight: 600;
+        line-height: 188%;
+    }
     #becomeAffiliateBtn{
         margin-top: 3rem;
+        width: 17rem
+    }
+    .getStartedBtn{
+        display: flex;
+        justify-content: center;
     }
     .manOnTieDiv{
         background-color: #F6FAFD;
         margin-top: 4rem;
         padding-top: 1.5rem;
         padding-bottom: 3rem;
+    }
+    .manOnTieDiv2{
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
+    }
+    .manOnTieDiv2 img{
+        width: 360px;
     }
     .achievements{
         text-align: center;
@@ -254,11 +296,14 @@ body{
         color: #424242;
     }
     .whatPeopleSay{
-        margin-top: 2.8rem;
         background-color: #FCF4FF;
         padding-top: 2.5rem;
         padding-bottom: 2rem;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimony{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -297,9 +342,8 @@ body{
         align-items: center;
         left:5%;
         width: 90%;
-        top:80px ;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        top:85px ;
+        padding: 2rem 0rem 2.5rem 0rem;
         z-index: 999;
         box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
     }
@@ -341,7 +385,7 @@ body{
         color: #66666614;
         background-color:#FCF4FF ;
         border-radius: 10px;
-        padding: 20px 15px 20px 20px;
+        padding: 20px 15px 30px 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -398,20 +442,19 @@ body{
     }
     .questions{
         display: flex;
-        flex-direction: row;
         text-align: left;
         margin-top: 2rem;
     }
     .questions button{
         width: 100%;
         font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
         font-size: 14px;
         line-height: 150%;
         border: none;
         outline: none;
         align-items: center;
         display: flex;
-        cursor: pointer;
         text-align: left;
         background-color: white;
         padding: 1rem;
@@ -419,7 +462,10 @@ body{
     .questions img{
         margin-left: auto;
     }
-    .active, .questions:hover{
+    .btnDiv{
+        width: 80%;
+    }
+    .active, .questions :hover{
         background-color: #ccc;
     }
     .panel{
@@ -427,12 +473,15 @@ body{
         display: none;
         overflow: hidden;
         text-align: left;
-        font-size: 12px;
+        font-size: 12px;   
     }
     .footer{
         padding-top: 3rem;
         padding-bottom: 2rem;
         background-color: #FAFAFA;
+    }
+    .footer a{
+        color:#000000;
     }
     .textandLogo{
         margin-left: 2rem;
@@ -460,5 +509,293 @@ body{
         line-height: 14px;
         margin-top:1rem ;
         margin-left: 2rem;
+    }
+    .secondHalfTitle{
+        display: none;
+    }
+    .navButton{
+        display: none;
+    }
+    .for{
+        display: none;
+    }
+    .yellowNotification{
+        display: none;
+    }
+    .getStartedDesktop{
+        display: none;
+    }
+}
+
+/* Desktop view */
+@media screen and (min-width:1024px){
+    .navBar{
+        margin: 0;
+        padding: 0.5rem 3rem;
+        background-color: #FAFAFA;
+        display: flex;
+        align-items: center;
+    }
+    .navBar a{
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 30px;
+        color: #000000;
+        margin-left: 0.8rem;
+    }
+    .for{
+        margin-left: 4rem;
+        color: #212121;
+        display: block;
+    }
+    .anAffiliate {
+        padding: 10px 32px;
+        border-radius: 4px;
+        border: none;
+        background-color: var(--main-purple);
+        color: #FFFFFF;
+        font-weight: 600;
+    }
+    .loginBtn{
+        padding: 8px 30px;
+        font-weight: 600;
+        color: var(--main-purple);
+        border: 1px solid #560BAD;
+        border-radius: 4px;
+    }
+    .menuBar{
+        display: none;
+    }
+    .secondHalfTitle{
+        margin-left: auto;
+        display: block;
+        color: #000000;
+        padding-right: 3rem;
+    }
+    .navButton{
+        display: block;
+    }
+    .earnPlusImage{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .earnMonPromoting{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5rem;
+        width: 90%;
+    }
+    .earnMoney{
+        margin-left: 0;
+        width: 60%;
+        text-align: start;
+        font-weight: 600;
+    }
+    .earn{
+        font-style: oblique;
+    }
+    .partnerWith{
+        text-align: start;
+        width: 67%;
+    }
+    .twoButtons{
+        display: flex;
+        flex-direction: row;
+    }
+    .becomeBtn{
+        margin-top: 0rem;
+        padding: 16px 32px;
+    }
+    .seehowBtn{
+        padding: 11.6px 30px;
+    }
+    .boxImage{
+        margin-left: auto;
+    }
+    .smilingGirl{
+        display: none;
+    }
+    .chart{
+        width:140px;
+        margin-left: 4rem;
+    }
+    .monthlyEarn{
+        font-size: 14px;
+        line-height: 120%;
+        padding: 15px 3px 15px 12px;
+        width:100%;
+        top: 65%;
+        left: -45%;
+    }
+    .monthlyEarn b{
+        font-size: 18px;
+    }
+    .yellowNotification{
+        display: block;
+        width:40px;
+    }
+    .purpleNotification{
+        display: none;
+    }
+    .smilingGirl2{
+        display: block;
+        width: 350px;
+        margin-left: -5rem;
+    }
+    .logoBox{
+        justify-content: space-around;
+        padding: 0 17rem;
+    }
+    .whyAffiliates{
+        font-weight: 700;
+        font-size: 30px;
+        margin: 10rem 0rem 3rem 0rem;
+    }
+    .allPerks{
+        display: flex;
+        margin: 0rem 3rem 0rem 3rem;
+    }
+    .whyAffiliatesPerks{
+        width: 28%;
+    }
+    .manOnMoneyBold{
+        font-weight: 700;
+        font-size: 26px;
+    }
+    .howItWorks{
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 8rem;
+    }
+    .howItWorksDiv{
+        padding: 0rem 3rem;
+    }
+    .callToAction{
+        display: flex;
+    }
+    .signUp{
+        font-size: 20px;
+    }
+    .freeAndEasy{
+        font-size: 15px;
+        width: 90%;
+    }
+    #becomeAffiliateBtn{
+        padding: 16px 0px 16px 50px;
+    }
+    .manOnTieDesktopView{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 3rem 0rem ;
+    }
+    .disruptingNigeria{
+        width:40%;
+        margin-top: 3rem;
+    }
+    .disruptingNigeria p {
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 117%;
+    }
+    .disruptingNigeria span {
+        font-size: 16px;
+        line-height: 150%;
+        width:89%;
+    }
+    .manOnTieDiv2 img{
+        width: 400px;
+    }
+    .achievements{
+        width:87%;
+        padding: 2rem 0rem ;
+    }
+    .numberOfAffiliates span{
+        font-weight: 800;
+    }
+    .getStartedBtn{
+       display: none;
+    }
+    .getStartedDesktop{
+        display: block;
+        margin: -1rem 13rem 0rem 0rem;
+    }
+    .faqs{
+        width: 80%;
+    }
+    .faqs span{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .faqs p{
+        width: 52%;
+        font-size: 17px;
+    }
+    .allQuestions{
+        width: 55%;
+    }
+    .faqSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .questions button{
+        font-weight: 600;
+        font-family: 'Work Sans', sans-serif;
+    }
+    .clientTestimonies{
+        display: flex;
+        padding: 2rem 10rem 0rem 10rem;
+    }
+    .testimony{
+        align-items: flex-start;  
+        margin: 3rem auto;
+    }
+    .testimony p{
+        margin-top: 3rem;
+        text-align: start;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    .ourClients{
+        text-align: start;
+        width: 80%;
+    }
+    .clients{
+        margin-top: 1rem;
+        width:65%;
+    }
+    .client2{
+        margin-top: 7.5rem;
+    }
+    .smilingManImg{
+        left:1%;
+        top: 40px;
+    }
+    .credithubIsMyPreferred{
+        text-align: start;   
+    }
+    .footer{
+        display: flex;
+    }
+    .footer ul{
+        height: 14rem;
+        width: 45rem; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        line-height: .1rem;
+        margin-top: -1rem;
+        text-align: start;
+        margin-left: 8rem;
+    }
+    .footerIcons{
+        margin-top: 0rem;
+    }
+    .iconAndCopyright{
+        margin-right: auto;
     }
 }
