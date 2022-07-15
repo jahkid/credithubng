@@ -53,3 +53,52 @@ if (isset($_POST['signup-btn'])) {
     }
 
 }
+
+//login validation
+if (isset($_POST['login-btn'])) {
+    $fullname = $_POST['full-name'];
+    $email = $_POST['email'];
+    // $company = $_POST['company'];
+    // $phone = $_POST['phone'];
+    // $product = $_POST['product'];
+    // $location = $_POST['location'];
+
+    //validation
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors['email'] = 'email address is invalid';
+    }
+   if(count($errors)=== 0){
+    $sql = 'SELECT * FROM users WHERE email=? AND fullname=? LIMIT 1';
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('ss', $fullname,$email);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+
+    if($email === $user['email']){
+         //login the user
+        
+         $_SESSION['id'] = $user['id'];
+         $_SESSION['fullname'] = $user['fullname'];
+         $_SESSION['email'] = $user['email'];
+         $_SESSION['verified'] = $user['verified'];
+         // set flash message
+         $_SESSION['message'] = 'You are now logged in';
+         $_SESSION['alert-class'] = 'alert-success';
+         header('location: dashboard.php');
+         exit();
+    }
+   }
+
+}
+
+//logout user
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['id']);
+    unset($_SESSION['fullname']);
+    unset($_SESSION['email']);
+    unset($_SESSION['verified']);
+    header('location: index.php');
+    exit();
+}

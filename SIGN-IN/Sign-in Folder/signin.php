@@ -1,3 +1,5 @@
+<?php require dirname(__DIR__).'./controllers/authController.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +74,7 @@
             <h1>Kindly fill this form and we will reach out to you</h1>
           </div>
            <!-- this section entails the input  -->
-         <form method="post" class="input" id="myForm">
+         <form action="signin.php" method="post" class="input" id="myForm">
             <label for="text">Full Name </label>
             <input type="text" placeholder="Enter your name" required />
             <label for="text">Company Name </label>
@@ -88,7 +90,7 @@
               placeholder="How can we help?"
               required
             />
-            <button id="sub" class="btn" type="button" data-toggle="modal" data-target="#success" onclick="myFunction()" style="margin-bottom: 5rem;">Submit</button>
+            <button name="login-btn" id="sub" class="btn" type="button" data-toggle="modal" data-target="#success" onclick="myFunction()" style="margin-bottom: 5rem;">Submit</button>
                
          </form>
           
