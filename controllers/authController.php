@@ -1,6 +1,8 @@
 <?php
 session_start();
 require dirname(__DIR__). './config/db.php';
+require dirname(__DIR__). 'emailController.php';
+
 $errors = array();
 //if clicks signup
 if (isset($_POST['signup-btn'])) {
@@ -40,6 +42,9 @@ if (isset($_POST['signup-btn'])) {
                 $_SESSION['fullname'] = $fullname;
                 $_SESSION['email'] = $email;
                 $_SESSION['verified'] = $verified;
+
+                sendVerificationEmail($email, $token);
+
                 // set flash message
                 $_SESSION['message'] = 'You are now logged in';
                 header('location: dashboard.php');
