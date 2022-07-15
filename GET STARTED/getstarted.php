@@ -60,7 +60,7 @@
         </div>
         <!-- this section entails the input  -->
         
-        <form action="getstarted.php" method="post">
+        <form enctype = 'multipart/form-data' action="https://getform.io/f/f111d183-7ab1-4dac-a0d9-2574d122a651" method="post">
         <div class="input">
           <label for="full-name">Full Name </label>
           <input type="text" placeholder="Enter your name" name = 'full-name'required />
