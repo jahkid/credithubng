@@ -78,6 +78,7 @@
             >Brief Product Description</label
           >
           <input
+            name = 'product'
             type="text"
             class="brief"
             placeholder="Tell us about the product or service"
@@ -90,6 +91,7 @@
                 <label for="file">Upload Document (kindly upload document to help us understand
                   your business better)</label>
                 <input
+                name="file"
                 type="file" placeholder= "Select files here" 
                 value="Supported file types: JPEG, PNG, PDF Max File size: 2mb"
                 required

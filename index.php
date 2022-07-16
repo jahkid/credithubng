@@ -52,8 +52,8 @@
                 customers at your predetermined budget</p>
 
             <div class="buttons">
-                <a href="#"><button class="getStarted">Get started for free</button></a>
-                <a href="#" class="aWorks"><button class="works"><img src="images/play-circle.svg" alt=""> See how it
+                <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
+                <a href="https://youtu.be/OogAcD4PRhk" class="aWorks"><button class="works"><img src="images/play-circle.svg" alt=""> See how it
                         works</button></a>
             </div>
         </div>
@@ -145,7 +145,7 @@
         <div class="laptop-container">
             <div class="get-started-container">
                 <h2>Getting started on CreditHub</h2>
-                <a href="#"><button class="for-free">Get started for free </button></a>
+                <a href="./GET STARTED/getstarted.php"><button class="for-free">Get started for free </button></a>
             </div>
             <img src="images/laptop.jpg" alt="laptop">
         </div>
@@ -173,7 +173,7 @@
             </div>
         </div>
         <div id="theButton">
-            <a href="#"><button class="getStarted">Get started for free</button></a>
+            <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
         </div>
     </section>
 
