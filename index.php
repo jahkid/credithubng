@@ -26,7 +26,7 @@
 
         <div class="mid-nav">
             <a href="#">For Businesses</a>
-            <a href="#">For Affiliates</a>
+            <a href="credithubng/affiliates">For Affiliates</a>
         </div>
 
         <div class="end-nav">
@@ -35,7 +35,7 @@
         </div>
 
         <div class="web-nav-buttons">
-            <a href="#"><button class="nav-getStarted">Get Started</button></a>
+            <a href="./GET STARTED/getstarted.php"><button class="nav-getStarted">Get Started</button></a>
             <a href="#"><button class="nav-logIn">Log In</button></a>
         </div>
 
@@ -52,8 +52,8 @@
                 customers at your predetermined budget</p>
 
             <div class="buttons">
-                <a href="#"><button class="getStarted">Get started for free</button></a>
-                <a href="#" class="aWorks"><button class="works"><img src="images/play-circle.svg" alt=""> See how it
+                <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
+                <a href="https://youtu.be/OogAcD4PRhk" target_blank class="aWorks"><button class="works"><img src="images/play-circle.svg" alt=""> See how it
                         works</button></a>
             </div>
         </div>
@@ -137,7 +137,7 @@
                 for their families. Here smart working Nigerians earn massive income daily.
             </h5>
 
-            <a href="#"><button class="getStarted">Get started for free</button></a>
+            <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
         </div>
     </section>
 
