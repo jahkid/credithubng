@@ -1,7 +1,7 @@
 <?php
 session_start();
 require dirname(__DIR__). './config/db.php';
-require dirname(__DIR__). 'emailController.php';
+// require dirname(__DIR__). 'emailController.php';
 
 $errors = array();
 //if clicks signup
