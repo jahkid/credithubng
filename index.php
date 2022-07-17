@@ -35,8 +35,8 @@
         </div>
 
         <div class="web-nav-buttons">
-            <a href="#"><button class="nav-getStarted">Get Started</button></a>
-            <a href="#"><button class="nav-logIn">Log In</button></a>
+            <a href="./GET STARTED/getstarted.php"><button class="nav-getStarted">Get Started</button></a>
+            <a href="./SIGN-IN/Sign-in Folder/signin.php"><button class="nav-logIn">Log In</button></a>
         </div>
 
         <div class="hamburger">
