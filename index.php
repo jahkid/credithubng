@@ -26,7 +26,7 @@
 
         <div class="mid-nav">
             <a href="#">For Businesses</a>
-            <a href="#">For Affiliates</a>
+            <a href="affiliate.php">For Affiliates</a>
         </div>
 
         <div class="end-nav">
