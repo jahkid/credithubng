@@ -67,6 +67,10 @@
           <input type="text" placeholder="Enter your company's name" name="company" required />
           <label for="email">Email Address </label>
           <input type="email" placeholder="youremail@email.com" name="email" required />
+          <label for="password">Password </label>
+          <input type="password" placeholder=" " name="password" required />
+          <label for="passwordConf">Confirm Password </label>
+          <input type="password" placeholder=" " name="passwordConf" required />
           <label for="phone">Phone Number</label>
           <input type="number" placeholder="e.g 08012345678" name="phone" required />
           <label for="location">Location</label>
