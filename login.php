@@ -1,4 +1,4 @@
-<?php require dirname(__DIR__).'./controllers/authController.php'; 
+<?php require dirname(__DIR__).'/credithubng/controllers/authController.php'; 
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,8 +24,8 @@
         </div>
         <?php endif; ?>
         <div class="input">
-          <label for="email">Email Address or Username</label>
-          <input type="email" placeholder="email/username" name="email" required />
+          <label for="fullname">Email Address or Username</label>
+          <input type="text" placeholder="email/username" name="fullname" required />
           <label for="password">Password </label>
           <input type="password" placeholder=" " name="password" required /> 
           </div>

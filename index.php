@@ -36,7 +36,7 @@
 
         <div class="web-nav-buttons">
             <a href="getStarted/getstarted.php"><button class="nav-getStarted">Get Started</button></a>
-            <a href="./SIGN-IN/Sign-in Folder/signin.php"><button class="nav-logIn">Log In</button></a>
+            <a href="login.php"><button class="nav-logIn">Log In</button></a>
         </div>
 
         <div class="hamburger">
@@ -52,7 +52,7 @@
                 customers at your predetermined budget</p>
 
             <div class="buttons">
-                <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
+                <a href="./getStarted/getstarted.php"><button class="getStarted">Get started for free</button></a>
                 <a href="https://youtu.be/OogAcD4PRhk" class="aWorks"><button class="works"><img src="images/play-circle.svg" alt=""> See how it
                         works</button></a>
             </div>
@@ -137,7 +137,7 @@
                 for their families. Here smart working Nigerians earn massive income daily.
             </h5>
 
-            <a href="#"><button class="getStarted">Get started for free</button></a>
+            <a href="./getStarted/getstarted.php"><button class="getStarted">Get started for free</button></a>
         </div>
     </section>
 
@@ -145,7 +145,7 @@
         <div class="laptop-container">
             <div class="get-started-container">
                 <h2>Getting started on CreditHub</h2>
-                <a href="./GET STARTED/getstarted.php"><button class="for-free">Get started for free </button></a>
+                <a href="./getStarted/getstarted.php"><button class="for-free">Get started for free </button></a>
             </div>
             <img src="images/laptop.jpg" alt="laptop">
         </div>
@@ -173,7 +173,7 @@
             </div>
         </div>
         <div id="theButton">
-            <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
+            <a href="./getStarted/getstarted.php"><button class="getStarted">Get started for free</button></a>
         </div>
     </section>
 
