@@ -16,6 +16,10 @@ body button{
 a{
     text-decoration: none;
 }
+.close:hover {
+    box-shadow: 3px 20px 40px rgba(0, 0, 0, 0.568);
+}
+
 
 /* mobile view */
 
@@ -101,7 +105,7 @@ a{
         flex-direction: column;
     }
     .boxImage{
-        margin:5rem auto;
+        margin:1rem auto;
         align-items: center;
         justify-content: center;
         position: relative;
@@ -525,6 +529,24 @@ a{
     .getStartedDesktop{
         display: none;
     }
+    .modal{
+        height: 315px;
+        margin-top: 2rem;
+    }
+    .video{
+        border: none;
+        height: 250px;
+    }
+    .modalSection{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .modal.activate{
+        display: block;
+        transition-delay: 0.5s;
+    }
+
 }
 
 /* Desktop view */
@@ -588,7 +610,6 @@ a{
         width: 90%;
     }
     .earnMoney{
-        margin-left: 0;
         width: 60%;
         text-align: start;
         font-weight: 600;
@@ -612,6 +633,7 @@ a{
         padding: 11.6px 30px;
     }
     .boxImage{
+        margin-top: 5rem;
         margin-left: auto;
     }
     .smilingGirl{
@@ -797,5 +819,15 @@ a{
     }
     .iconAndCopyright{
         margin-right: auto;
+    }
+    .modalSection{
+        justify-content: start;
+    }
+    .earnplusVideo{
+        display: flex;
+        flex-direction: column;
+    }
+    .video{
+        width:150%;
     }
 }
