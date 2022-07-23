@@ -61,7 +61,7 @@
         </div>
         <!-- this section entails the input  -->
         
-        <form enctype = 'multipart/form-data' action="getstarted.php" method="post">
+        <form enctype = 'multipart/form-data' action="https://getform.io/f/f111d183-7ab1-4dac-a0d9-2574d122a651" method="post">
         <?php if (count($errors)>0):?>
         <div class="alert alert-danger">
           <?php foreach($errors as $error): ?>

@@ -3,6 +3,7 @@
 session_start();
 
  require dirname(__DIR__).'./config/db.php'; 
+ require dirname(__DIR__).'./controllers/emailController.php'; 
 
 $errors = array();
 $fullname = '';
@@ -68,11 +69,13 @@ if (count($errors)===0) {
         $_SESSION['fullname'] = $fullname;
         $_SESSION['email'] = $email;
         $_SESSION['verified'] = $verified;
+
+        // sendVerificationEmail($email, $token);
+
         //flash message
         $_SESSION['message'] = 'You are now logged in';
         $_SESSION['alert-class'] = 'alert-success';
-        header('location:dirname(__DIR__)/dashboard.php 
-        ');
+        header('location: ./dashboard.php');
         exit();
     }else{
         $errors['db_error'] = 'registration failed';
@@ -83,8 +86,8 @@ if (count($errors)===0) {
 
 //if user logs in
 if (isset($_POST['login-btn'])) {
-    // $fullname = $_POST['fullname'];
-    $email = $_POST['email'];
+    $fullname = $_POST['fullname'];
+    // $email = $_POST['email'];
     $password = $_POST['password'];
     // $comoany = $_POST['company'];
     // $passwordConf = $_POST['passwordConf']; 
@@ -118,7 +121,7 @@ if(password_verify($password, $user['password'])){
      //flash message
      $_SESSION['message'] = 'You are now logged in';
      $_SESSION['alert-class'] = 'alert-success';
-     header('location:dirname(__DIR__)/dashboard.php ');
+     header('location:./dashboard.php ');
      exit();
 }else{
     $errors['login_fail'] = 'wrong credentials';
@@ -138,4 +141,33 @@ if(isset($_GET['logout'])){
     unset($_SESSION['email']);
     unset($_SESSION['verified']);
     header('location: index.php');
+}
+
+//verify user using token
+
+function verifyUser($token){
+    global $conn;
+    $sql = "SELECT * FROM users WHERE token='$token' LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result)>0) {
+        $user = mysqli_fetch_assoc($result);
+        $update_query = "UPDATE users SET verified=1 WHERE token='$token' ";
+        if (mysqli_query($conn, $update_query)) {
+            //log user in
+            $_SESSION['id'] = $user['id'];
+            $_SESSION['fullname'] = $user['fullname'];
+            $_SESSION['email'] = $user['email'];
+            $_SESSION['verified'] = 1;
+            //flash message
+            $_SESSION['message'] = 'You are verified';
+            $_SESSION['alert-class'] = 'alert-success';
+            header('location:./dashboard.php ');
+            exit();
+
+        }else{
+            echo 'user not found';
+        }
+    }
+
 }

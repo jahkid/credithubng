@@ -1,4 +1,10 @@
-<?php  require dirname(__DIR__).'./controllers/authController.php'; 
+<?php  require dirname(__DIR__).'/credithubng/controllers/authController.php'; 
+ 
+ if (isset($_GET['token'])) {
+    $token = $_GET['token'];
+    verifyUser($token);
+ }
+ 
  if(!isset($_SESSION['id'])){
     header('location: login.php');
  }
@@ -20,7 +26,7 @@
   
             <div class="alert <?php echo $_SESSION['alert-class']; ?>">
                    <?php 
-                   echo $_SESSION['message'];
+                   echo 'you are logged in';
                    unset($_SESSION['message']);
                    ?>
                 </div>
@@ -30,9 +36,10 @@
                 <a href="dashboard.php?logout=1" class="logout">Logout</a>
                 <?php if(!$_SESSION['verified']): ?>
                 <div>
-                    You need to verify your account
-                    signin to your mail to verify 
+                    thank you for registering with creditHub,
+                    you shall be contacted via your provided email
                     <strong><?php echo $_SESSION['email'];?></strong>
+                    shortly. 
                 </div>
                 <?php endif; ?>
                 <?php if($_SESSION['verified']): ?>
