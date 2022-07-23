@@ -52,9 +52,8 @@
                 customers at your predetermined budget</p>
 
             <div class="buttons">
-                <a href="./getStarted/getstarted.php"><button class="getStarted">Get started for free</button></a>
-                <a href="https://youtu.be/OogAcD4PRhk" class="aWorks"><button class="works"><img src="images/play-circle.svg" alt=""> See how it
-                        works</button></a>
+                <a href="./GET STARTED/getstarted.php"><button class="getStarted">Get started for free</button></a>
+                <iframe src="https://www.youtube.com/embed/gMuowPoCCOc" class="youtube"></iframe>
             </div>
         </div>
 
