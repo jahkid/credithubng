@@ -24,14 +24,7 @@
         </div>
         <?php endif; ?>
         <div class="input">
-          <label for="fullname">Email Address or Username</label>
-          <input type="text" placeholder="email/username" name="fullname" required />
-          <label for="password">Password </label>
-          <input type="password" placeholder=" " name="password" required /> 
-          </div>
-          <button class="btn" name="login-btn">Sign Up</button>
-          </form>
-        </div>
+        
       </div>
     </div>
   </body>
