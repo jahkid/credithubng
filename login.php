@@ -1,5 +1,5 @@
-<?php require 'controllers/authController.php'; 
-$errors = 0;
+<?php //require 'controllers/authController.php'; 
+//$errors = 0;
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,13 +18,13 @@ $errors = 0;
   </head>
   <body>
         <form enctype = 'multipart/form-data' action="login.php" method="post">
-        <?php if (count($errors)>0){?>
+        <?php /* if (count($errors)>0):?>
         <div class="alert alert-danger">
-          <?php foreach($errors as $error){ ?>
+          <?php foreach($errors as $error): ?>
           <li><?php echo $error; ?></li>
-          <?php } ?>
+          <?php : ?>
         </div>
-        <?php } ?>
+        <?php : */ ?>
         <div class="input">
         
       </div>
