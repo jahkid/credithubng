@@ -50,7 +50,7 @@
           <div class="form-title">
               <h1>Get your company started on CreditHub</h1>
           </div>
-        <form class="input-form">
+        <form class="input-form" enctype="multipart/form-data" action="https://getform.io/f/f111d183-7ab1-4dac-a0d9-2574d122a651" method="POST">
             <div class="col-1">
                 <div class="input-field">
                     <label for="fullname">Full Name</label>
@@ -81,7 +81,7 @@
             </div>
             <div class="field">
             <label for="desc">Brief Product description</label>
-            <textarea name="desc" id="desc" cols="30" rows="10" style="height: 210px;"></textarea>
+            <textarea name="description" id="desc" cols="30" rows="10" style="height: 210px;"></textarea>
         </div>
         <div class="submit">
             <input type="submit" value="Submit">
