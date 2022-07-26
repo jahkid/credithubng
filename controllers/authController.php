@@ -1,12 +1,11 @@
 <?php
 
 session_start();
-echo "ss";
-exit;
 
  require dirname(__DIR__).'./config/db.php'; 
  require dirname(__DIR__).'./controllers/emailController.php'; 
 
+echo "ss";
 $errors = array();
 $fullname = '';
 $email = '';
@@ -23,6 +22,8 @@ if (isset($_POST['signup-btn'])) {
     $location = $_POST['location'];
 
 
+echo "ss";
+exit;
 //validations
 if (empty($fullname)) {
     $errors['fullname'] = 'fullname required';
