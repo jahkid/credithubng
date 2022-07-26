@@ -26,22 +26,22 @@
         <div id="menu" class="menu">
           <button onclick="cancel()" id="cancel">&times;</button>
           <ul>
-            <a href="#"><li>For Business</li></a>
+            <a href="../index.html"><li>Home</li></a>
             <a href="../affiliate.html"><li>Affliates</li></a>
             <a href="#"><li>Contact Us</li></a>
             <a href="#"><li>FAQ</li></a>
-            <a id="getstarted" href="./getstarted.php">GetStarted</a>
-            <a id="login" href="../login.php">Login</a>
+            <a id="getstarted" href="#">For Business</a>
+            <a id="login" href="#">Login</a>
           </ul>
         </div>
         <div id="menus" class="menus">
             <button onclick="cancel()" id="cancel">&times;</button>
             <ul>
-              <a href="#"><li>For Business</li></a>
+              <a href="../index.html"><li>Home</li></a>
               <a href="../affiliate.html"><li>Affliates</li></a>
               <a href="#"><li>Contact Us</li></a>
               <a href="#"><li>FAQ</li></a>
-              <a id="getstarted" href="./getstarted.php">GetStarted</a>
+              <a id="getstarted" href="#">For Business</a>
               <a id="login" href="../login.php">Login</a>
             </ul>
           </div>
