@@ -30,8 +30,8 @@
             <a href="#"><li>Affliates</li></a>
             <a href="#"><li>Contact Us</li></a>
             <a href="#"><li>FAQ</li></a>
-            <a id="getstarted" href="#">GetStarted</a>
-            <a id="login" href="#">Login</a>
+            <a id="getstarted" href="./getstarted.php">GetStarted</a>
+            <a id="login" href="../login.php">Login</a>
           </ul>
         </div>
         <div id="menus" class="menus">
@@ -41,8 +41,8 @@
               <a href="#"><li>Affliates</li></a>
               <a href="#"><li>Contact Us</li></a>
               <a href="#"><li>FAQ</li></a>
-              <a id="getstarted" href="#">GetStarted</a>
-              <a id="login" href="#">Login</a>
+              <a id="getstarted" href="./getstarted.php">GetStarted</a>
+              <a id="login" href="../login.php">Login</a>
             </ul>
           </div>
       </header>
