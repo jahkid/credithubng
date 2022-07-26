@@ -1,6 +1,8 @@
 <?php
 
 session_start();
+echo "ss";
+exit;
 
  require dirname(__DIR__).'./config/db.php'; 
  require dirname(__DIR__).'./controllers/emailController.php'; 
