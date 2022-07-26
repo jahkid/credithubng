@@ -5,9 +5,6 @@ session_start();
 require dirname(__DIR__).'./config/db.php'; 
 require dirname(__DIR__).'./controllers/emailController.php'; 
 
-
-echo "ss";
-exit;
 $errors = array();
 $fullname = '';
 $email = '';
