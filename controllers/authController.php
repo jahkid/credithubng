@@ -2,8 +2,12 @@
 
 session_start();
 
- require dirname(__DIR__).'./config/db.php'; 
- require dirname(__DIR__).'./controllers/emailController.php'; 
+//  require dirname(__DIR__).'./config/db.php'; 
+//  require dirname(__DIR__).'./controllers/emailController.php'; 
+
+
+ include_once '../config/db.php'; 
+  //include_once './emailController.php'; 
 
 echo "ss";
 exit;
