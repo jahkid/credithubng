@@ -2,11 +2,8 @@
 
 session_start();
 
-// require dirname(__DIR__).'./config/db.php'; 
-// require dirname(__DIR__).'./controllers/emailController.php'; 
-
-
-include_once '../config/db.php'; 
+require '../config/db.php'; 
+// require dirname(__DIR__).'./controllers/emailController.php';  
 
 $errors = array();
 $fullname = '';
