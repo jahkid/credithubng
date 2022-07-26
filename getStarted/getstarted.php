@@ -1,5 +1,6 @@
-<?php //require dirname(__DIR__).'./controllers/authController.php';
-include_once '../controllers/authController.php';
+<?php require '../controllers/authController.php';
+//include_once '../controllers/authController.php';
+echo 's';
 ?>
 <!DOCTYPE html>
 <html lang="en">
