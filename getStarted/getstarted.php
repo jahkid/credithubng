@@ -27,7 +27,7 @@
           <button onclick="cancel()" id="cancel">&times;</button>
           <ul>
             <a href="#"><li>For Business</li></a>
-            <a href="#"><li>Affliates</li></a>
+            <a href="../affiliate.html"><li>Affliates</li></a>
             <a href="#"><li>Contact Us</li></a>
             <a href="#"><li>FAQ</li></a>
             <a id="getstarted" href="./getstarted.php">GetStarted</a>
@@ -38,7 +38,7 @@
             <button onclick="cancel()" id="cancel">&times;</button>
             <ul>
               <a href="#"><li>For Business</li></a>
-              <a href="#"><li>Affliates</li></a>
+              <a href="../affiliate.html"><li>Affliates</li></a>
               <a href="#"><li>Contact Us</li></a>
               <a href="#"><li>FAQ</li></a>
               <a id="getstarted" href="./getstarted.php">GetStarted</a>
