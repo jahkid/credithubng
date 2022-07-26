@@ -1,5 +1,4 @@
-<?php require 'controllers/authController.php'; 
-//$errors = 0;
+<?php //require 'controllers/authController.php'; 
  ?>
 <!DOCTYPE html>
 <html lang="en">
