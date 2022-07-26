@@ -6,7 +6,7 @@ session_start();
 //  require dirname(__DIR__).'./controllers/emailController.php'; 
 
 
-// include_once '../config/db.php'; 
+include_once '../config/db.php'; 
   //include_once './emailController.php'; 
 
 echo "ss";
