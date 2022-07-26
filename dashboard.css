@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:  'Work Sans', sans-serif;
+    text-align: center;
+}
+.btn{
+    width: 239px;
+    height: 58px;
+    border-radius: 5px;
+    background-color: #560BAD;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 

@@ -1,3 +1,4 @@
+// FAQs
 var acc = document.getElementsByClassName("questions");
 var i;
 
@@ -14,3 +15,4 @@ for(i=0; i < acc.length; i++){
     }
     })
 }
+

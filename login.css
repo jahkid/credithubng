@@ -4,7 +4,11 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }  
-
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container{
     width: 100%;
     height: 100vh;
@@ -107,6 +111,9 @@ label{
     color: #ffffff;
     margin: 20px auto;
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 } 
 
 .upload-container input {
