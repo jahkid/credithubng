@@ -19,7 +19,7 @@
   <body>
     <div class="container-wrapper">
       <header class="app-bar">
-        <img class="image" src="images/Logos.png" alt="logo" />
+        <a href="../index.html"><img class="image" src="images/Logos.png" alt="logo" /></a>
         <button onclick="openMenu()" id="menu-icon">
           <img src="images/Menu.png" alt="menu" />
         </button>
