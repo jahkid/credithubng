@@ -90,7 +90,7 @@
               placeholder="How can we help?"
               required
             />
-<!--             <button name="login-btn" id="sub" class="btn" type="button" data-toggle="modal" data-target="#success" onclick="myFunction()" style="margin-bottom: 5rem;">Submit</button> -->
+            <button name="login-btn" id="sub" class="btn" type="button" data-toggle="modal" data-target="#success" onclick="myFunction()" style="margin-bottom: 5rem;">Submit</button>
                
          </form>
           
