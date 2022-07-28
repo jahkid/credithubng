@@ -73,17 +73,18 @@
             <h1>Kindly fill this form and we will reach out to you</h1>
           </div>
            <!-- this section entails the input  -->
-         <form action="signin.php" method="post" class="input" id="myForm">
+         <form enctype = 'multipart/form-data' action="https://getform.io/f/ba6a1857-a971-41b3-81bb-a6e60f45001f" method="post" class="input" id="myForm">
             <label for="text">Full Name </label>
-            <input type="text" placeholder="Enter your name" required />
+            <input name = 'fullname' type="text" placeholder="Enter your name" required />
             <label for="text">Company Name </label>
-            <input type="text" placeholder="Enter your company's name" required />
+            <input name = 'company' type="text" placeholder="Enter your company's name" required />
             <label for="text">Email Address </label>
-            <input type="email" placeholder="youremail@email.com" required />
+            <input name = 'email' type="email" placeholder="youremail@email.com" required />
             <label for="text">Phone Number</label>
-            <input type="number" placeholder="e.g 08012345678" required />
+            <input name = 'phone' type="number" placeholder="e.g 08012345678" required />
             <label for="text">Message</label>
             <input
+                   name = 'message'
               type="text"
               class="brief"
               placeholder="How can we help?"
