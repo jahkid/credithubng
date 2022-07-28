@@ -1,4 +1,3 @@
-<?php require dirname(__DIR__).'./controllers/authController.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
